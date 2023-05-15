@@ -239,137 +239,164 @@ footer{
     background-color: #343434;
 }
 
-@media (max-width: 480px){
-    body{
-        font-family: 'Dancing Script', cursive;
-        font-size: 1.1rem;     
-        }
+
+@media (max-width:1000px) {   
     nav{
-        width: 100vw;
-        height: 50px;
-        justify-content:space-between;
-        align-items: center;
-        }
-    .logo{
-        margin-left: 1px;
+        height: 60px;
     }
-    .navList ul{
-        
-        margin-right: 1px;
+    .logo{
+        margin-left: 10px;
+    }
+    .navList ul{       
+        margin-right: 10px;
     }
     li{
-        
         padding: 2px;
-        margin-right: 1px;
-        
+        margin-right: 2px;        
     }
     a{
-        border-radius: 5px;
-        padding: 5px;
-        font-weight: 100;
+        font-size: medium;
+        font-weight: 200;
     }
-    
     img{
-        width: 30px;
-        margin-right: 1px;
-        }
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+        
+    }
     span{
-        font-size: 1.1rem;    
+        font-size: x-large;    
         color: rgb(95, 3, 3);
     }
     
-    
-    .inicio{  
-     padding: 0px;
-       
-    }
-    
     .contenedor{
-        margin-top: 50px;
-        width: 100%;    
-        display: grid;
-        align-items:start;        
+        margin-top: 8px;
+       
+        display: flex;
+
+    }
+    .Foto{
+       
+        width: 300px;
+        height: auto;   
+        
     }
     p{
         text-align: justify;
-        margin: 20px;
-        
-    }
-    .Foto{
-        width: 500px;
-        height: auto;
-        margin-left: 50px;
+        padding: 10px;
         margin-right: 10px;
-        border-radius: 20px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
-    }
-    
-    .section_galeria{
-        display: flex;
-        width:700px;
-        height: 450px;
-        
-        
-    }
-    .section_galeria .img_galeria{
-        width: 0;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .8;
-        transition: .5s ease;
-    
-    
-    }
-    .section_galeria .img_galeria:hover{
-    cursor: crosshair;
-    width: 400px;
-    opacity: 1;
-    filter: contrast(120%);
     }
     .contenedor_galeria{
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        margin-top: 60px;     
         
     }
     .contenedor_historia{
-        display: grid;
-        text-align: center;
-        justify-content: center;    
+        margin-top: 150px; 
         
         
     }
     .p_historia{
-        padding-left: 200px;
-        padding-right: 100px;    
-    }
-    .contenedor_tabla{
         
-        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;    
+    }
+
+    table{
+        margin-top: 80px;
+        width: 85%;
+        font-size: medium;         
+    }
+   
+    
+}
+@media (max-width:600px) {
+    
+   
+    nav{
+        width: 100vw;
+        height: 50px;
+        font-size: xx-small;   
+        position: fixed;
+       
+    }
+    .title_logo{
+        font-size: x-small;
+    }
+    .logo{
+        margin-left: 2px;
+        font-size: xx-small;
+       
+    }
+    .navList ul{       
+        margin-right: 2px;
+        
+    }
+    li{
+        padding: 2px;
+        margin-right: 2px; 
+             
+    }
+    a{
+        font-size:xx-small;
+        font-weight: 100;
+    }
+    img{
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+        
+    }
+    span{
+        font-size: x-large;    
+        color: rgb(95, 3, 3);
+    }
+    
+    .contenedor{
+        width: 100vw;
+        height: 100vh;
+        margin-top: 1px;       
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        
+        
+
+    }
+    .Foto{
+        margin: 0;
+        margin-bottom: 20px;
+        width: 90vw;
+        height: auto;   
+        
+    }
+    p{
+        width: 100vw;
+        font-size: large;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    h1{
+        font-size: larger;
+    }
+    .galeria{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 100vw;
+      
+    }
+    .historia{
+        margin-left: 50px;
+
+    }
+    .reyes{
+        margin-top: 100px;
+        margin-left: 50px;
+
     }
     table{
-        width: 60%;
-        font-size: smaller;
-        border: 1px solid rgb(95, 3, 3);    
-    }
-    th, td{
-        width: 5%;
-        text-align: center;
-        vertical-align: center;
-        border: 1px solid rgb(95, 3, 3);
-        border-collapse: collapse;
-        padding: 0.3rem;
-        caption-side: bottom;
-    }
-    caption{
-        padding: 0.3rem;
-        color: #fff;
-        background: #000;
-    }
-    th{
-        background-color: rgb(95, 3, 3);
-        color: white;
+        margin-top: 60px;
+        width: 70%;
+        font-size: small;         
     }
 }
